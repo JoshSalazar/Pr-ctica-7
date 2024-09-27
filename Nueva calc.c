@@ -31,7 +31,7 @@ int div(int a, int b)
   return(resp);
 }
 
-int exp(int a, int b)
+int expo(int a, int b)
 {
   resp = pow(a,b);
   return (resp);
@@ -43,4 +43,36 @@ int main()
   int respuesta;
 
   printf("Dime que operación debes realizar: \n");
-  printf("1.")
+  printf("1 .- suma\n");
+  printf("2 .- Resta\n");
+  printf("3 .- Multiplicación\n");
+  printf("4 .- División\n");
+  printf("5 .- Exponente\n");
+  scanf("%d", &option);
+
+  switch(opcion)
+  {
+    default:
+    respuesta = 0;
+    break;
+    case 1:
+    respuesta = suma(a,b);
+    break;
+    case 2:
+    respuesta = resta(a,b);
+    break;
+    case 3:
+    respuesta = multi(a,b);
+    break;
+    case 4:
+    respuesta = div(a,b);
+    break;
+    case 5:
+    respuesta = expo(a,b);
+    break;
+
+  }
+
+  printf("El restultado de la operación es: %d\n", respuesta);
+  return 0;
+}
