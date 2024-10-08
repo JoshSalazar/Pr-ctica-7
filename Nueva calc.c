@@ -1,9 +1,9 @@
-/*Salazar ANicasio Joshua
+/*Salazar Anicasio Joshua
 ejercicio 4 calculadora con funciones
 Practica 7 27/9/24*/
+
 #include <stdio.h>
 #include <math.h>
-
 
 int resp;
 
@@ -12,25 +12,21 @@ int suma(int a, int b)
   resp = a + b;
   return(resp);
 }
-
-int resta(int a, int b)
+int resta(int a , int b)
 {
   resp = a - b;
   return(resp);
 }
-
 int multi(int a, int b)
 {
   resp = a * b;
   return(resp);
 }
-
 int div(int a, int b)
 {
   resp = a / b;
   return(resp);
 }
-
 int expo(int a, int b)
 {
   resp = pow(a,b);
@@ -39,7 +35,7 @@ int expo(int a, int b)
 
 int main()
 {
-  int a=0, b=0;
+  int a=0, b=0, option;
   int respuesta;
 
   printf("Dime que operación debes realizar: \n");
@@ -50,7 +46,7 @@ int main()
   printf("5 .- Exponente\n");
   scanf("%d", &option);
 
-  switch(opcion)
+  switch(option)
   {
     default:
     respuesta = 0;
@@ -70,7 +66,6 @@ int main()
     case 5:
     respuesta = expo(a,b);
     break;
-
   }
 
   printf("El restultado de la operación es: %d\n", respuesta);
