@@ -1,6 +1,6 @@
 /*Salazar Anicasio Joshua
 ejercicio 4 calculadora con funciones
-Practica 7 27/9/24*/
+Práctica 7 27/9/24*/
 
 #include <stdio.h>
 #include <math.h>
@@ -46,6 +46,11 @@ int main()
   printf("5 .- Exponente\n");
   scanf("%d", &option);
 
+  printf("Introduce el primer número: ");
+  scanf("%d", &a);
+  printf("Introduce el segundo número: ");
+  scanf("%d", &b);
+  
   switch(option)
   {
     default:
