@@ -39,7 +39,7 @@ int main()
   int respuesta;
 
   printf("Dime que operación debes realizar: \n");
-  printf("1 .- suma\n");
+  printf("1 .- Suma\n");
   printf("2 .- Resta\n");
   printf("3 .- Multiplicación\n");
   printf("4 .- División\n");
